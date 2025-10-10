@@ -6,7 +6,7 @@ import CalculoRemuneraciones from './components/calculo';
 function App() {
 
   return (
-    <div className="App">
+    <div className="">
       <div className='container'>
         
         <Titulo/>
