@@ -34,6 +34,7 @@ function CalculoRemuneraciones() {
 
             <div className='row mt-3 text-center bg-secondary text-white p-3 rounded'>
                 <div className='col-lg-12'>
+                    
                     <h2>Demo de Cálculo</h2>
                     <h3>Sueldo líquido</h3>
                 </div>
@@ -75,6 +76,17 @@ function CalculoRemuneraciones() {
                     <div className='form-group mt-3'>
                         <label className='form-label' htmlFor='montoViatico'>Monto Viático</label>
                         <input id='montoViatico' name='montoViatico' className='form-control' value={montoViatico} placeholder='20000' type='number' onChange={(e) => setMontoViatico(e.target.value)}></input>
+                    </div>
+
+                    <div className='form-group mt-3'>
+                        <a className='btn btn-warning' onClick={(e) => {
+                            setSueldoBruto(0);
+                            setGratificacionLegal(0);
+                            setTipoPrevision("");
+                            setMontoColacion(0);
+                            setMontoMovilizacion(0);
+                            setMontoViatico(0);
+                        }}><i class="fa-solid fa-trash"></i> Limpiar</a>
                     </div>
                 </div>
 
